@@ -1,0 +1,27 @@
+[package]
+name = "kanbanapp"
+description = "Kanban Application for Managers"
+version = "0.1.0"
+authors = ["Heikki Leskinen <heikki.leskinen@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+[dependencies]
+web-view = "0.6.3"
+serde_derive = "1.0.116"
+serde_json = "1.0.57"
+serde = "1.0.116"
+open = "1.4.0"
+
+[package.metadata.bundle]
+name = "Kanban"
+identifier = "tech.leskinen.kanban"
+version = "1.0.0"
+resources = []
+icon = ["icons/32x32.png", "icons/32x32@2x.png", "icons/128x128.png", "icons/128x128@2x.png"]
+copyright = "Copyright (c) Heikki Leskinen 2020. All rights reserved."
+short_description = "Kanban App"
+long_description = "Kanban Application for Managers"
