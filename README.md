@@ -41,6 +41,8 @@ https://guide.elm-lang.org/install/elm.html
 **Rust**
 ```shell
 https://www.rust-lang.org/tools/install
+# for ubuntu 
+# sudo apt install libwebkit2gtk-4.0-dev
 cargo install cargo-bundle
 ```
 
@@ -53,7 +55,7 @@ git clone https://github.com/HeikkiLeskinen/kanban-board/
 
 **Build the cargo project and release**
 ```shell
-export KANBAN_TASK_DIR="<path>/cache.json"; cargo build
+export TASK_FILE_PATH="<path>/cache.json"; cargo build
 cargo run # run & test
 cargo bundle --release
 ```
