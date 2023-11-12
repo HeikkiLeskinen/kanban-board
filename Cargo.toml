@@ -10,11 +10,11 @@ name = "lib"
 path = "src/lib.rs"
 
 [dependencies]
-web-view = "0.6.3"
-serde_derive = "1.0.116"
-serde_json = "1.0.57"
-serde = "1.0.116"
-open = "1.4.0"
+web-view = { git = "https://github.com/Boscop/web-view", rev = "82d7cbc" } 
+serde_derive = "1.0.145"
+serde_json = "1.0.85"
+serde = "1.0.145"
+open = "3.0.3"
 
 [package.metadata.bundle]
 name = "Kanban"

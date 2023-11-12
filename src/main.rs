@@ -23,7 +23,7 @@ fn main() {
 
             let result = serde_json::from_str(_arg).unwrap_or_else(|e| {
                 println!("invalid arguments: {}", _arg.to_string()); 
-                panic!(e);
+                panic!("{}", e);
             });
 
             match result {
